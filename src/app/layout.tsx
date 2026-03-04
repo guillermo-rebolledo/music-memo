@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeToggle } from "../components/theme-toggle";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import { site } from "../../lib/site";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -66,6 +67,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} bg-background text-foreground antialiased`}
       >
+        <SpeedInsights />
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
             <nav

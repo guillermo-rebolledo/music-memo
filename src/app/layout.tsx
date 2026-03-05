@@ -97,6 +97,9 @@ export default function RootLayout({
                 >
                   human
                 </a>
+                <span role="img" aria-label="heart">
+                  ❤️
+                </span>
               </span>
             </div>
           </footer>
